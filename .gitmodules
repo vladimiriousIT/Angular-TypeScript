@@ -1,0 +1,3 @@
+[submodule "Lecture"]
+	path = Lecture
+	url = https://github.com/vladimiriousIT/Angular-TypeScript
