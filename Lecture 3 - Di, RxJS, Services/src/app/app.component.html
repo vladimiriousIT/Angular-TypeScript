@@ -1,0 +1,40 @@
+<div *ngIf="users === null">Loading...</div>
+<div *ngIf="users !== null">
+    <ul>
+        <li *ngFor="let user of users">{{user.username}} --> {{user.company.name}}</li>
+    </ul>
+</div>
+
+<app-test [obj]="data"></app-test>
+
+<!-- <div class="welcome-message">{{welcomeMessage}}</div>
+<app-name-input *ngIf="isVisible" (btnClick)="nameInputButtonHandler($event)" [inputValue]="nameInputValue"></app-name-input>
+
+<ul>
+    <li *ngFor="let user of users; let i = index">
+        <span>{{i + 1}}</span> /
+        <span>{{user.firstName}}</span> /
+        <span>{{user.lastName}}</span> /
+        <span>{{user.age}}</span>
+    </li>
+</ul>
+
+<button (click)="toggleHandler()" [style.color]="isVisible ?'green': 'red'">Toggle</button> -->
+
+
+
+<!-- <div *ngIf="isVisible">
+    Is Visible
+</div>
+<div *ngIf="!isVisible">
+    Is Not Visible
+</div> -->
+
+<!-- All lifecycle hooks
+ngOnChanges() - when data is changed
+ngDoCheck() - detect your own changes
+ngAfterContentInit() - when external content is received
+ngAfterContentChecked() - when external content is checked
+ngAfterViewInit() - when the views and child views are created
+ngAfterViewChecked() - when the above are checked
+More at: https://angular.io/guide/lifecycle-hooks -->

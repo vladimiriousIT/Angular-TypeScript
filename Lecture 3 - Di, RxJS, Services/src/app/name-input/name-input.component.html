@@ -1,0 +1,11 @@
+<!-- <input value="{{inputValue}}" type="text"> -->
+
+<!-- binding -->
+<!-- <input [value]="inputValue" (keyup)="inputKeyUpHandler($event.target)" type="text">  -->
+<!-- event handling  from tepmlate to our class-->
+<!-- {{inputValue}} -->
+
+<input type="text" [value]="inputValue "#inputEl>
+{{inputEl.value}}
+<!-- const inputEl = document.createElement('input'); -->
+<button (click)="btnClickHandler($event, inputEl)">Click me!</button>
