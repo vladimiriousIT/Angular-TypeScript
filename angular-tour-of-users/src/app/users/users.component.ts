@@ -11,7 +11,7 @@ import { MessageService } from '../message.service';
 export class UsersComponent implements OnInit {
   // users = USERS;
   users: User[];
-  //selectedUser: User;
+  // selectedUser: User;
   constructor(private userService: UserService,
               private messageService: MessageService) { }
 
