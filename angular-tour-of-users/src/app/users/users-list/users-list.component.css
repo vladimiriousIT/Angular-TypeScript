@@ -1,0 +1,7 @@
+.heroes li.selected {
+    background-color: #CFD8DC;
+    color: white;
+  }
+  .heroes li.selected:hover {
+    background-color: #BBD8DC;
+  }

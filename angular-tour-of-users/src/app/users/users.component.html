@@ -1,4 +1,13 @@
-<h2>My Users</h2>
+<h2>USERS</h2>
+<ul class="users">
+  <li *ngFor="let user of users$ | async"
+    [class.selected]="user.id === selectedId">
+    <a [routerLink]="['/user', user.id]">
+      <span class="badge">{{ user.id }}</span>{{ user.name }}
+    </a>
+  </li>
+</ul>
+<!-- <h2>My Users</h2>
 <ul class="users">
   <li *ngFor="let user of users">
     <a routerLink="/detail/{{user.id}}">
@@ -18,12 +27,12 @@
   </label>
   <label>Age:
     <input #UserAge />
-  </label>
+  </label> -->
   <!-- (click) passes input value to add() and then clears the input -->
-  <button (click)="add(UserFirstName.value, UserLastName.value, UserAge.value); UserFirstName.value=''; UserLastName.value=''; UserAge.value=''">
+  <!-- <button (click)="add(UserFirstName.value, UserLastName.value, UserAge.value); UserFirstName.value=''; UserLastName.value=''; UserAge.value=''">
     add
   </button>
-</div>
+</div> -->
 
 
 <!-- <h2>My Users</h2>
